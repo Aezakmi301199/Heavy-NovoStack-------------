@@ -1,0 +1,23 @@
+.brands>* {
+ margin-left: 10px;
+ margin-right: 10px;
+}
+
+.brand {
+ width: max-content;
+ padding: 5px;
+}
+
+.brand:hover {
+ cursor: pointer;
+ background-color: orange;
+ border-radius: 3px;
+}
+
+.brand>*:hover {
+ color: gainsboro;
+}
+
+.bottom30px>*:last-child {
+ margin-bottom: 30px;
+}

@@ -1,0 +1,92 @@
+.chatList {
+    min-width: 160px;
+    max-width: 220px;
+    overflow-y: scroll;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+/*  ?     background-color: rgb(109, 160, 255); */
+.user {
+    display: flex;
+    padding-top: 6px;
+    margin-right: 10px;
+}
+
+.user>* {
+    flex-basis: 30%;
+    margin-left: 10px;
+}
+
+.user:hover {
+    background-color: rgb(214, 203, 203, 0.1);
+    cursor: pointer;
+}
+
+.portrait>img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-radius: 100px 75px;
+    padding: 3px;
+}
+
+.portrait>img:hover {
+    background-color: whitesmoke;
+}
+
+.userName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userName>* {
+    color: white;
+    margin-top: 1px;
+}
+
+.userName>h5 {
+    font-size: 0.9rem;
+}
+
+.userName>h6 {
+    font-size: 0.7rem;
+    width: max-content;
+}
+
+/* ? СКРОЛЛ-БАР */
+.chatList::-webkit-scrollbar {
+    width: 1.5em;
+    height: 1em;
+}
+
+.chatList::-webkit-scrollbar-track {
+    background: rgb(214, 211, 211, 0.1);
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+
+.chatList::-webkit-scrollbar-thumb {
+    background: rgb(10, 1, 0);
+    border: 0.1em solid rgb(195, 241, 195);
+    border-radius: 100vw;
+}
+
+.chatList::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 12, 25);
+}
+
+/* Vertical scrolling */
+
+.vertical-scroll {
+    display: grid;
+    gap: 0.5em;
+    grid-auto-flow: column;
+    grid-auto-columns: 75%;
+    padding: 0.5em;
+    overflow-x: scroll;
+    background: #d3fdbe;
+    border-radius: 1em;
+    position: relative;
+}

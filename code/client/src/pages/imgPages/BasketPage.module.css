@@ -1,0 +1,15 @@
+.items{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    justify-content: space-around;
+    min-width: 450px;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 25rem));
+}
+@media (max-width: 700px){
+    .items {
+        grid-template-columns: repeat(auto-fit,minmax(150px, 300px));
+    }
+}

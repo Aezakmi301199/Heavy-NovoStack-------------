@@ -1,0 +1,22 @@
+.root {
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(110px, 1fr));
+    gap: 10px;
+    justify-content: space-between;
+    justify-items: center;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -5px);
+    min-width: 500px;
+}
+
+.root>div>a {
+    color: #1b75cc;
+}
+
+.root>div>a:hover {
+    color: red;
+}

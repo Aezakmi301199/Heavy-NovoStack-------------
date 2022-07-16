@@ -1,0 +1,33 @@
+#InputRegWithPicture {
+    outline: none;
+    max-width: 70%;
+    padding: 3px 15px 3px 15px;
+    border-radius: 4px;
+    color: black;
+    font-style: italic;
+    color: red;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#InputRegWithPicture:hover,
+#InputRegWithPicture:focus,
+#InputRegWithPicture>input:hover,
+#InputRegWithPicture>input:focus {
+    color: wheat;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#InputRegWithPicture>img {
+    margin-right: 10px;
+}
+
+#InputRegWithPicture>input:hover,
+#InputRegWithPicture>input:focus {
+    border: 1.5px solid rgb(23, 87, 0);
+}

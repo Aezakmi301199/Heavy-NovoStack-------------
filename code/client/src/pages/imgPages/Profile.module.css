@@ -1,0 +1,39 @@
+.backProfile {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    top: 95px;
+    left: 0;
+    width: 102%;
+    background-color: blue;
+    background-image: url('../../img//backprofile.jpg');
+    background-size: cover;
+    height: 100%;
+    min-width: 500px;
+    box-sizing: border-box;
+}
+
+.backProfile>*:last-child {
+    padding: 8px 3px;
+    background-color: #F4F4F4;
+    margin-top: 10px;
+}
+
+/*  position: absolute; */
+@media(max-width:1000px) {
+    .backProfile {
+        height: 110%;
+        box-sizing: content-box;
+    }
+}
+
+@media(max-width:600px) {
+    .profile_left {
+        background-color: transparent;
+        border: none;
+    }
+
+    .profile_left>h2 {
+        color: white;
+    }
+}

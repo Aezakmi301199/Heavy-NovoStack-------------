@@ -1,0 +1,20 @@
+.btn {
+  box-sizing: border-box;
+  border-radius: 0.6em;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  background-color: #3573E0;
+  padding: 0.33em 1.4em;
+  border-radius: 2px;
+  margin: 5px auto;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: black;
+  background-color: gainsboro;
+  ;
+
+}

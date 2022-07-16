@@ -1,0 +1,49 @@
+.inputWithoutCheck {
+ width: 100%;
+ box-sizing: border-box;
+ outline: none;
+ padding: 9.4px 3px 9.4px 8px;
+ border-radius: 4px;
+ background-color: gainsboro;
+}
+
+.inputWithoutCheck>* {
+ margin-top: 5px;
+}
+
+.pic15px15px {
+ width: 15px;
+ height: 15px;
+ background-size: cover;
+}
+
+.pic15px15px:hover {
+ cursor: pointer;
+}
+
+.downImages {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ /* ? width: 340px; */
+}
+
+.downImages>* {
+ margin: 5px 10px;
+}
+
+#pich3 {
+ text-align: center;
+}
+
+.imageh5 {
+ font-size: 10px;
+}
+
+.width150pxInput {
+ width: 150px;
+}
+
+.width150pxInput>input {
+ width: 90px
+}

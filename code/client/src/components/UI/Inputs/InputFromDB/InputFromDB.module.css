@@ -1,0 +1,152 @@
+.boxValue {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 5px 2px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.crud {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.boxValue>input,
+.boxValue>img {
+    margin-left: 4px;
+}
+
+.boxValue>img {
+    cursor: pointer;
+}
+
+.inputUniversal::placeholder {
+    color: white;
+}
+
+.inputUniversal:hover,
+.inputUniversal:focus {
+    background-color: #1b75cc;
+    ;
+    border: 1px solid gray;
+    color: white;
+}
+
+.inputUniversal {
+    width: max-content;
+    cursor: pointer;
+    outline: none;
+    background-color: gray;
+    padding: 5px 6px 5px 5px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-size: 10px;
+    color: white;
+}
+
+.row {
+    overflow-y: scroll;
+    max-height: 200px;
+    z-index: 1;
+    width: 100%;
+    background-color: gray;
+    position: absolute;
+    top: 89%;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row>* {
+    color: white;
+    font-weight: 300;
+    font-family: 'Zen_Maru_Gothic';
+    padding: 2px 5px;
+    background-color: transparent;
+}
+
+.divWithPic {
+    color: white;
+    font-weight: 300;
+    font-family: 'Zen_Maru_Gothic';
+    padding: 5px 5px;
+    background-color: transparent;
+}
+
+.divWithPic>* {
+    color: white;
+}
+
+.divWithPic>*:hover {
+    cursor: pointer;
+    background-color: #1b75cc;
+}
+
+.row>*:hover {
+    cursor: pointer;
+    background-color: #1b75cc;
+}
+
+
+#errovDivPos {
+    position: absolute;
+    top: 108%;
+}
+
+.boxValue>img {
+    margin: auto 4px auto 4px;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.boxValue>img:hover {
+    background-color: black;
+    border-radius: 15px;
+}
+
+.boxValue>img:active {
+    background-color: #1b75cc
+}
+
+.imitSelectCategory {
+    outline: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: black;
+    background-color: gainsboro;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    padding-left: 3px;
+    height: 25px;
+}
+
+#mw210px {
+    width: 210px;
+}
+
+#errorAbsoluteBottom {
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 100%;
+}
+
+/*
+
+       <img src={plus} onClick={e => {
+                  console.log(searchOptionBack)
+                  console.log(searchOptionFront)
+                  console.log(searchOptionFrontSAVED)
+                  setSearchOptionBack({...searchOptionBack,[criterieSetting]:''})
+                  sendSearchOption(searchOptionFront,[criterieSetting],true)
+                  setFrontSearchBoolean({...searchOptionBoolean,[criterieSetting]:false})
+
+          
+        }}/>
+
+*/

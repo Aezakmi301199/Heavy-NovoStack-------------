@@ -1,0 +1,484 @@
+/* ОСНОВА ВЕРСТКИ */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: black;
+    font-family: 'Ubuntu';
+}
+
+button *,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(238, 231, 231);
+    /*       background-color: #F4F4F4;;   */
+    height: 100%;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+/*     // padding: 15px 20px 25px 20px;  */
+#root {
+    box-sizing: border-box;
+    padding: 15px 20px 0px 0px;
+    margin: auto;
+    background-color: #F4F4F4;
+    font-family: 'Ubuntu';
+    max-width: 1024px;
+    min-height: 750px;
+    min-width: 500px;
+    font-weight: 400;
+    position: relative;
+}
+
+:root {
+    font-size: 15px;
+}
+
+.img_20px20px {
+    width: 2rem;
+    height: 2rem;
+}
+
+.container10rem10rem {
+    width: 10rem;
+    height: 10rem;
+}
+
+.container15rem {
+    width: 15rem;
+    height: 15rem;
+}
+
+.container5rem {
+    width: 5rem;
+    height: 5rem;
+}
+
+.width10rem {
+    width: 10rem;
+}
+
+.width15rem {
+    width: 15rem;
+}
+
+.width25rem {
+    width: 25rem;
+}
+
+.img10rem {
+    width: 10rem;
+    height: auto;
+}
+
+.img_1rem {
+    width: 1rem;
+    height: 1rem;
+    background-size: cover;
+}
+
+.img_20px20px>img {
+    margin: 2px;
+    width: 90%;
+    height: auto;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cont_flex_center {
+    display: flex;
+    justify-content: center;
+}
+
+.cont_flex {
+    display: flex;
+}
+
+.contFlexWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.custom_input {
+    width: 100%;
+    outline: none;
+    padding: 3px 5px;
+    border-radius: 2px;
+    border: 1.5px solid transparent;
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+}
+
+.closeButton:hover {
+    cursor: pointer;
+}
+
+.closeButton>img {
+    width: 100%;
+    height: auto;
+}
+
+.width95perheight75per {
+    margin: 3px;
+    width: 95%;
+    min-height: auto;
+    max-height: 75%;
+}
+
+
+
+/* This fires as soon as the element enters the dorm */
+.list-transition-enter,
+.list-transition-appear {
+    /*We give the list the initial dimension of the list button*/
+    transition: all 1s ease-out;
+    width: 90%;
+    max-height: 40px;
+    color: transparent;
+}
+
+/* This is where we can add the transition*/
+.list-transition-enter-active,
+.list-transition-appear-active {
+    transition: all 1s ease-out;
+    width: 90%;
+    max-height: 200px;
+
+}
+
+/* This fires as soon as the this.state.showList is false */
+.list-transition-exit {
+
+    width: 90%;
+    max-height: 200px;
+}
+
+/* fires as element leaves the DOM*/
+.list-transition-exit-active {
+
+    width: 90%;
+    max-height: 40px;
+    color: transparent;
+
+
+}
+
+.alert-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.alert-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.alert-exit {
+    opacity: 1;
+}
+
+.alert-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.left_side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.circle {
+    background-color: orange;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.on {
+    display: block;
+}
+
+.off {
+    display: none;
+}
+
+.img20px20px {
+    width: 20px;
+    height: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.widthMaxContent {
+    width: max-content;
+}
+
+.cancelAbsoluteTopRight {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.flexRowAlignCenter {
+    display: flex;
+    align-items: center;
+}
+
+.flexRowAlignJustifyCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexColumnAlignJustifyCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexColumnAlignCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#marginLeft50px {
+    margin-left: 50px;
+}
+
+.flexRowJustifySpaceBetweenWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flexRowJustifySpaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marginLeftRight5pxAll>* {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.marginLeftRight10pxAll>* {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.marginTop20pxAll>* {
+    margin-top: 20px;
+}
+
+.marginTop5pxAll>* {
+    margin-top: 5px;
+}
+
+.marginTop10pxAll>* {
+    margin-top: 10px;
+}
+
+.marginTop5px {
+    margin-top: 5px;
+}
+
+.marginTop10px {
+    margin-top: 10px;
+}
+
+.marginTop30px {
+    margin-top: 30px;
+}
+
+
+
+#positionAbsoluteTopAndLeftCenter {
+    background-color: gainsboro;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    bottom: 70%;
+}
+
+#cursorPointer:hover {
+    cursor: pointer;
+}
+
+#gainsboro {
+    background-color: gainsboro;
+}
+
+#gainsboroRelative {
+    background-color: gainsboro;
+    position: relative;
+}
+
+.backRed {
+    background-color: red;
+}
+
+.backBlack {
+    background-color: black;
+}
+
+.backOrange {
+    background-color: orange;
+}
+
+
+
+.backOrangered {
+    background-color: orangered;
+}
+
+.colorBlue {
+    color: blue;
+}
+
+.colorOrangered {
+    color: orangered;
+}
+
+.colorWhite {
+    color: white;
+}
+
+.colorRed {
+    color: red;
+}
+
+.colorGreen {
+    color: green;
+}
+
+#overflow {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+
+#overflowOFF {
+    overflow-y: visible;
+}
+
+.on {
+    display: block;
+}
+
+.off {
+    display: none;
+}
+
+/* ? СКРОЛЛ-БАР */
+#overflow::-webkit-scrollbar {
+    width: 15px;
+    height: 1em;
+}
+
+#overflow::-webkit-scrollbar-track {
+    background: rgba(255, 17, 17, 0.1);
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+
+#overflow::-webkit-scrollbar-thumb {
+    background: rgb(249, 25, 0);
+    border: 0.1em solid rgb(195, 241, 195);
+    border-radius: 100vw;
+}
+
+#overflow::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 117, 243);
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Zen_Maru_Gothic";
+    src: url("./fonts/Zen_Maru_Gothic/ZenMaruGothic-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rock_Salt";
+    src: url("./fonts/Rock_Salt/RockSalt-Regular.ttf") format("truetype");
+}
+
+@media(max-width:800px) {
+    :root {
+        font-size: 13px;
+    }
+
+    .logo_title {
+        display: none;
+    }
+
+    .authAndreg>*:first-child {
+        margin-left: 0.2rem;
+        margin-right: 0.3rem;
+    }
+
+    .authAndreg>*:last-child {
+        margin-left: 0.3rem;
+    }
+}
+
+#on {
+    display: block;
+}
+
+#off {
+    display: none;
+}
+
+@media(max-width:700px) {
+    :root {
+        font-size: 10px;
+    }
+
+}
+
+#unClickableDiv {
+    pointer-events: none;
+}

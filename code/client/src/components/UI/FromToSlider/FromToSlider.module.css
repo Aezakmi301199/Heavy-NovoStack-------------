@@ -1,0 +1,60 @@
+.boxValue {
+ display: flex;
+ flex-direction: column;
+ margin-top: 5px;
+ text-align: center;
+}
+
+.boxValue>* {
+ margin-top: 5px;
+}
+
+.boxValueTriple>*:nth-child(2) {
+ margin-bottom: 15px;
+}
+
+.mileage>.imitSelectCategory {
+ display: flex;
+ justify-content: space-between;
+}
+
+.mileage>.imitSelectCategory>div>input {
+ width: 100%;
+}
+
+.mileage>.double {
+ display: flex;
+ justify-content: space-between;
+}
+
+.mileage>.double>* {
+ width: 40%;
+}
+
+.mileage>.triple {
+ display: flex;
+ justify-content: space-between;
+}
+
+.mileage>.triple>*:nth-child(2) {
+ margin-left: 10px;
+ margin-right: 10px;
+}
+
+.imitSelectCategory {
+ outline: none;
+ border: 1px solid black;
+ border-radius: 3px;
+ color: black;
+ background-color: gainsboro;
+ box-sizing: border-box;
+ width: 100%;
+ outline: none;
+ padding-left: 3px;
+ height: 25px;
+}
+
+.cancel {
+ align-self: flex-end;
+ justify-self: end;
+}

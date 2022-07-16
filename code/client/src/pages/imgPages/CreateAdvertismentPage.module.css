@@ -1,0 +1,326 @@
+.createAdvertismentPage {
+    background-image: url('../../img/backreg.jpg');
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    top: 50px;
+    /* position: absolute; */
+    z-index: 1;
+    width: 102.3%;
+    height: 100%;
+    right: 0px;
+    color: white;
+    padding-left: 10px;
+    background-size: cover;
+    padding-bottom: 80px;
+    min-width: 500px;
+}
+
+.createAdvertismentPage>h2 {
+    color: white;
+}
+
+.flexToEnd {
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flexToEnd>* {
+    margin-left: 10px;
+}
+
+#center>* {
+    margin: 10px auto 3px auto;
+}
+
+/* КНОПКА СБРОСА */
+.reset {
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.reset>img {
+    width: 15px;
+    height: 15px;
+    background-image: cover;
+}
+
+.modalTop {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.modalTop>* {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.key>*,
+.value>* {
+    margin-top: 20px;
+}
+
+
+.key>input {
+    cursor: progress;
+    text-align: center;
+    padding: 8px 2px;
+    width: 150px;
+    background-color: black;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.key>input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.key>input:hover,
+.key>input:focus {
+    border: 1px solid #1b75cc;
+    ;
+}
+
+/* КНОПКА ВВОДА */
+
+.inputWithoutCheck {
+    outline: none;
+    padding: 9.4px 3px 9.4px 8px;
+    border-radius: 4px;
+}
+
+.inputWithoutCheck:hover,
+.inputWithoutCheck:focus {
+    color: white;
+    background-color: #1b75cc;
+    ;
+}
+
+.modalBottom {
+    width: 90%;
+    margin-top: 15px;
+}
+
+.modalBottom>h3 {
+    text-align: center;
+}
+
+.modalBottom>* {
+    margin-top: 5px;
+    color: white;
+}
+
+.modalBottom>textarea {
+    color: black;
+    min-height: 100px;
+    width: 100%;
+}
+
+.value>div>input[type="file"] {
+    display: flex;
+    flex-direction: column;
+
+    width: 95%;
+    background-color: #1b75cc;
+    cursor: pointer;
+    padding: 6.8px 3px 6px 8px;
+    border-radius: 4px;
+}
+
+.value>div>input[type="file"]>* {
+    cursor: pointer;
+}
+
+.dopSettings {
+    color: white;
+    background-color: red;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dopSettings>* {
+    flex-basis: 45%;
+    color: white;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dopSettings>*>p {
+    color: white;
+    font-size: 12px;
+    margin: 5px 5px;
+}
+
+.dopSettings>*>input {
+    padding: 3px 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    background-color: gainsboro;
+    box-sizing: border-box;
+    width: 100px;
+    outline: none;
+    padding-left: 3px;
+    height: 29px;
+}
+
+#mxWidth215px {
+    width: 215px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#mxWidth215px>div {
+    margin-top: 5px;
+}
+
+#mxWidth215px>*:first-child:hover,
+#mxWidth215px>*:first-child:focus {
+    background-color: #1b75cc;
+}
+
+input[type='file'] {
+    color: transparent;
+}
+
+
+#colorWhite>*>p {
+    color: white;
+    margin-bottom: 5px;
+}
+
+#inputFromDBInDop {
+    box-sizing: border-box;
+    height: 29px;
+}
+
+#inputFromDBInDop>input {
+    width: 100%;
+}
+
+#colorRed {
+    text-align: center;
+    color: red;
+}
+
+.errorDivClass {
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 108%;
+}
+
+.slider {
+    max-width: 500px;
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider>button::before {
+    color: white;
+}
+
+.picture {
+    position: relative;
+    overflow: hidden;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#cancelBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#cancelBtn:hover {
+    cursor: pointer;
+}
+
+@media(max-width:1027px) {
+
+    .slider {
+        max-width: 90%;
+    }
+}
+
+@media(max-width:850px) {
+    .createAdvertismentPage {
+        box-sizing: content-box;
+    }
+}
+
+@media(max-width:780px) {
+    .slider {
+        max-width: 400px;
+    }
+}
+
+@media(max-width:650px) {
+    .slider {
+        max-width: 450px;
+    }
+
+}
+
+/* settings
+ import close from '../img/close.png'
+  const [preview,setPreview] = useState([])
+ const previewPic = (pictures) => {
+    let newPic = []
+    for (let i = 0; i < pictures.length; i++) {
+      let reader = new FileReader();
+      reader.readAsDataURL(pictures[i]);
+      reader.onloadend = function () {
+        let picture = { id: pictures[i].lastModified, path: reader.result, name: pictures[i].name };
+        newPic = [picture, ...newPic]
+        setPreview([...newPic, ...preview])
+      }
+    }
+  }
+   <Slider className={classes.slider} {...settings}>
+          {preview.length > 0
+            ? preview.map(item => {
+              console.log(item)
+              return <div key={item.id} className={classes.picture}>
+                <img src={item.path} />
+                <img id={classes.cancelBtn} src={close}
+                  onClick={e => { // setDeletedPic
+                    console.log(item)
+                    let previewPic = removeItemFromArray(item, 'name', preview);
+                    let picturesFromInput = removeItemFromArray(item, 'name', pictures);
+                    setPictures(picturesFromInput)
+                    setPreview(previewPic)
+                    // setNotDownPic(removeItemFromArray(item, 'name', notDownPic))
+                    // setAdvert({ ...advert, pictures })
+                  }} />
+              </div>
+            })
+            : ''
+          }
+        </Slider>
+
+*/

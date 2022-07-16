@@ -1,0 +1,177 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    min-width: 500px;
+}
+
+.navbar>a {
+    text-align: center;
+}
+
+.logo_title {
+    font-family: 'Zen_Maru_Gothic';
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.main_nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.authAndreg {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.authAndreg>*:last-child {
+    font-size: 1rem;
+    margin: 0px 0.95rem;
+}
+
+.logo>*,
+.main_nav>*,
+.authAndreg>* {
+    text-align: center;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.main_nav>div>img {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+
+#modalAuth_pos {
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    /*  top: 30%; */
+    z-index: 5;
+    transform: translate(-50%, -50px);
+}
+
+.profile {
+    width: 1rem;
+    height: auto;
+}
+
+.users {
+    padding: 5px 2px 5px 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.users:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.boxUsers {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    z-index: 2;
+    color: white;
+}
+
+.controlUsers {
+    position: relative;
+}
+
+.avatar {
+    cursor: pointer;
+    width: 46px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.avatar>div {
+    position: absolute;
+    top: 0px;
+}
+
+.avatar>img {
+    margin: 3px;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.row {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 6px 3px 6px;
+    z-index: 3;
+    background-color: white;
+}
+
+
+.on {
+    display: block;
+}
+
+.off {
+    display: none;
+}
+
+.basket {
+    position: relative;
+}
+
+.navbarCircle>h6 {
+    color: white;
+    font-weight: 900;
+    font-family: 'Ubuntu';
+}
+
+.navbarCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: -15%;
+    width: 1rem;
+    height: 1rem;
+    background-color: #a2c0f3;
+}
+
+@media(max-width:730px) {
+    .logo_title {
+        display: none;
+    }
+}
+
+@media(max-width:548px) {
+    .main_nav>*:nth-child(3) {
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+#marginOFF {
+    background-color: inherit;
+    margin: 0;
+}
+
+#marginOFF:hover {
+    background-color: #1b75cc;
+    ;
+}

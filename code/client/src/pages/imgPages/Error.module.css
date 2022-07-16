@@ -1,0 +1,43 @@
+
+.ErrorPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    color: white;
+    background-image: url('../../img/backError.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+}
+#bigH1{
+    margin-top: 50px;
+    color: white;
+    font-family: 'Rock_Salt';
+    font-size:3rem;
+    text-shadow: 11px 11px 21px pink;
+    font-weight: 600;
+    max-width:max-content;
+}
+#bigh3{
+    color: white;
+    font-size:2rem;
+    font-style: italic;
+    font-family: 'Rock_Salt';
+    max-width:max-content
+}
+.exit{
+    margin-top: 70px;
+    text-align: center;
+}
+.exit>*{
+    
+    margin-bottom: 10px;
+    color: wheat;
+    text-shadow: 1.5px 0px 1px black;
+    
+}

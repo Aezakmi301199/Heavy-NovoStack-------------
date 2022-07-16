@@ -1,0 +1,122 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 5px 20px;
+    min-width: 300px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item>*:first-child,
+.item>*:last-child{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.item>*:last-child{
+    margin-top: auto;
+}
+.item:hover{
+    background-color: #e9e5e5;
+}
+.item>*{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.itemTop>*:first-child:hover{
+    color: #3573E0;
+    cursor: pointer;
+}
+.itemTop{
+    display: flex;
+    justify-content: space-between;
+}
+.itemMiddle{
+    margin-left: 10px;
+}
+.itemMiddle>p{
+    word-break: keep-all;
+    padding: 1px 3px;
+}
+.itemBottom{
+    display: flex;
+    justify-content: space-between;
+}
+.slider{
+    width: 80%;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slider>button::before{
+    color: black;
+}
+.picture{
+    height: 190px;
+    overflow: hidden;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.picture>img{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+}
+.location{
+    text-align: center;
+    flex-basis: 50%;
+}
+.location>*{
+    margin-top: 2px;
+}
+.itemPreTop{
+    text-align: center;
+    margin: 5px auto;
+}
+.itemPreTop>*{
+    margin-top: 2px;
+}
+  .slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #ee0000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.cost{
+    display: flex;
+    justify-content: space-between;
+}
+.cost>div{
+    flex-basis: 45%;
+}
+.cost>div>input{
+    text-align: center;
+}
+
+.tech{
+    display: flex;
+    }
+    .tech>*{
+        margin: 3px 5px;
+    }
+    .tech>*>*{
+        font-weight: 400;
+        width: max-content;
+        margin-top: 3px;
+    }
+    #colorOrange{
+        background-color: orangered;
+    }
+    #colorRed{
+        background-color: red;
+    }

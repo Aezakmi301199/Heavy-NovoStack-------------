@@ -1,0 +1,9 @@
+.inputAdminPanelView>* {
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+
+.inputAdminPanelView>h5 {
+ text-align: center;
+ color: #3573E0;
+}

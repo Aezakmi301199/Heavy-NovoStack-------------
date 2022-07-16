@@ -1,0 +1,35 @@
+.spinner{
+    display: inline-block;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    width: 80;
+    height:80;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+  }
+  .spinner:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 70px solid #fff;
+    border-color: rgb(21, 0, 255) transparent rgb(255, 0, 0) transparent;
+    animation: lds-hourglass 3s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }

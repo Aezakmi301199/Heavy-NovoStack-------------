@@ -1,0 +1,81 @@
+.modalAuth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    z-index: 4;
+    position: relative;
+}
+
+.modalAuthOff{
+    display: none;
+}
+.formContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-radius: 120px 30px 30px 40px;
+    background-color:rgb(73, 68, 159) ;
+    padding: 10px 30px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.info input:focus{
+    box-sizing: content-box;
+    border-radius: none;
+}
+.cell{
+    position: relative;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+h5{
+    font-size: 15px;
+}
+.auth_line{
+    display: flex;
+    align-items: center;
+}
+.unValid{
+    border: 0.5px solid red;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.inputRegAndAuth{
+    padding: 6px 7px;
+    outline: none;
+    border: 2px solid rgb(5, 3, 0);
+    border-radius: 5px;
+}
+.inputRegAndAuth:hover,
+.inputRegAndAuth:focus{
+    border: 2px solid rgb(23, 87, 0);
+}
+.cell>h5{
+    color: white;
+    margin-bottom: 6px;
+}
+.errorDiv_pos{
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+}
+.authInput{
+    outline: none;
+    padding: 3px 5px;
+    border-radius: 2px;
+    border: 1.5px solid transparent;
+}
+.authInput:hover{
+    border: 1.5px solid  rgb(23, 87, 0);
+}
+.authInput:focus{
+    border: 1.5px solid  rgb(23, 87, 0);
+}

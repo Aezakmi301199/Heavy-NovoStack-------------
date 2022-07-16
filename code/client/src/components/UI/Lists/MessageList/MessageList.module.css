@@ -1,0 +1,25 @@
+.messageList {
+    margin: 10px;
+    padding-right: 10px;
+}
+
+.messageList>* {
+    margin-top: 10px;
+}
+
+.first_el {
+
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.last_el {
+    background-color: rgb(255, 0, 238);
+    width: 100%;
+    height: 30px;
+}
+
+.first_el_off {
+    display: none;
+}

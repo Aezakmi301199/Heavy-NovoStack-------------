@@ -1,0 +1,124 @@
+.backMainPic {
+    min-width: 400px;
+    position: relative;
+    width: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-size: contain;
+
+    z-index: 0;
+}
+
+.banner {
+    position: relative;
+    width: 80%;
+}
+
+.content {
+    text-shadow: 1px 0 3px #000;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.content>* {
+    margin: 2px 5px;
+}
+
+.banner>.content>* {
+    color: white;
+}
+
+.mainCol {
+    min-width: 475px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainCol>* {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#btnBanner {
+    background-color: #3573E0;
+    padding: 0.33em 1.4em;
+    border-radius: 2px;
+    margin: 5px auto;
+}
+
+#btnBanner:hover {
+    background-color: inherit;
+}
+
+.itemCatgory {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 10rem;
+    height: 9.5rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 2px 2px;
+}
+
+.itemCatgory>* {
+    color: black;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.tech {
+    margin: 3px;
+    width: 95%;
+    min-height: auto;
+    max-height: 75%;
+}
+
+.category {
+    width: 88%;
+    display: grid;
+    gap: 15px;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 20%));
+}
+
+
+
+
+@media(max-width:780px) {
+    .category {
+        grid-template-columns: repeat(auto-fit, minmax(125px, 15%));
+    }
+}
+
+@media(max-width:700px) {
+    .category {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 20%));
+    }
+}
+
+@media(max-width:640px) {
+    .category {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 17%));
+    }
+}
+
+@media(max-width:550px) {
+    .category {
+        justify-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, 35%);
+    }
+}

@@ -1,0 +1,45 @@
+.modalOn {
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ z-index: 15;
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ right: 0px;
+ padding: 10px;
+ min-height: 100%;
+ max-height: 750px;
+}
+
+.absoluteLine {
+ position: absolute;
+ top: 5px;
+ right: 5px;
+ display: flex;
+ align-items: center;
+}
+
+.absoluteLine>* {
+ margin-left: 10px;
+ margin-right: 10px;
+}
+
+.crudButton {
+ position: absolute;
+ right: 20px;
+ top: 5px;
+}
+
+.modalOff {
+ display: none;
+}
+
+.fix {
+ width: 100%;
+ /*какой top  укажешь там эти элементы и зафиксируются*/
+ position: sticky;
+ left: 0;
+ top: 0;
+ height: 20px;
+}

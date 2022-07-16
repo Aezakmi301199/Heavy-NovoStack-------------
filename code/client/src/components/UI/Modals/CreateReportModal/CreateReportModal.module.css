@@ -1,0 +1,73 @@
+.select {
+ /* Reset */
+ outline: none;
+ appearance: none;
+ border: 0;
+ outline: 0;
+ font: inherit;
+ /* Personalize */
+ height: 3em;
+ padding: 0 4em 0 1em;
+ color: white;
+ box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+ background-color: #2c3e50;
+ cursor: pointer;
+ width: 100%;
+}
+
+#width100perc {
+ width: 100%;
+}
+
+textarea {
+ box-sizing: border-box;
+ outline: none;
+ padding: 5px;
+}
+
+.CreateReportModal {
+ margin-top: 20px;
+ position: absolute;
+ top: 0px;
+ left: 50%;
+ transform: translateX(-50%);
+ background-color: gainsboro;
+ width: 430px;
+ padding: 35px 30px 20px 30px;
+}
+
+.CreateReportModal>* {
+ margin-top: 20px;
+}
+
+.select>*:first-child {
+ text-align: left;
+}
+
+.select>option {
+ color: white;
+}
+
+.select:focus {
+ outline: none;
+}
+
+.inputWhite {
+ background-color: white;
+ outline: none;
+ padding: 9px 3px 9px 8px;
+ border-radius: 4px;
+}
+
+.absoluteLine {
+ position: absolute;
+ top: 5px;
+ right: 5px;
+ display: flex;
+ align-items: center;
+}
+
+.absoluteLine>* {
+ margin-left: 10px;
+ margin-right: 10px;
+}

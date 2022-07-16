@@ -1,0 +1,23 @@
+.messageFlex{
+    display: flex;
+    align-items: center;
+}
+.messageFlex>*{
+    margin-left: 5px;
+    color: white;
+}
+
+.messageFlex>h3{
+    min-width: max-content;
+    text-align: center;
+    color: #3573E0;
+}
+.messageFlex>h4{
+    margin-left: 10px;
+    margin-right: 10px;
+    word-break: break-all;
+}
+.time{ 
+ margin-left: auto;
+ min-width: max-content;
+}

@@ -1,0 +1,17 @@
+.inputSearch{
+    background-color: black;
+    padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+    border-radius: 3px;
+    outline: none;
+    color: white;
+    position: relative;
+    max-width: 160px;
+}
+.inputSearch::placeholder{
+    color: white;
+    font-size: 1rem;
+}
+.inputSearch:hover{
+    cursor: progress;
+    background-color:gray;
+}

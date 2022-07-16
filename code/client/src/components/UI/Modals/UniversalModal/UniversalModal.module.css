@@ -1,0 +1,15 @@
+.modalOn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    width: 450px;
+    padding: 7px;
+    background-color: black;
+}
+
+.modalOff{
+    display: none;
+}

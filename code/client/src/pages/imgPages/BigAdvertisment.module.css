@@ -1,0 +1,7 @@
+.BigAdvertisment{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    min-width: 450px;
+    margin-top: 15px;
+}

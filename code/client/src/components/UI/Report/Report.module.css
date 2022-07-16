@@ -1,0 +1,16 @@
+.width15rem {
+ width: 15rem;
+ padding: 10px 10px 5px;
+ border: 1px solid black;
+ display: flex;
+ flex-direction: column;
+}
+
+.width15rem>*:last-child {
+ align-self: center;
+}
+
+
+.width15rem:hover {
+ background-color: gainsboro;
+}
